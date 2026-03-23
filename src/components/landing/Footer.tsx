@@ -41,7 +41,7 @@ const Footer = () => {
                 <h4 className="text-lg font-bold mb-5">About</h4>
                 <ul className="space-y-3 text-[14px] opacity-80">
                   <li className="hover:text-gray-300 cursor-pointer">Features</li>
-                  <li className="hover:text-gray-300 cursor-pointer">Pricing</li>
+                  {/* <li className="hover:text-gray-300 cursor-pointer">Pricing</li> */}
                   <li className="hover:text-gray-300 cursor-pointer">Contact</li>
                 </ul>
               </div>
