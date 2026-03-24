@@ -27,8 +27,12 @@ const Footer = () => {
             <div className="space-y-3">
               <p className="text-xs font-bold uppercase tracking-wider">Get the App!</p>
               <div className="flex gap-3">
-                <img src={googlePlayImg} alt="Google Play" className="h-10 cursor-pointer hover:opacity-80 transition-opacity" />
-                <img src={appStoreImg} alt="App Store" className="h-10 cursor-pointer hover:opacity-80 transition-opacity" />
+                <a href="https://play.google.com/store/apps/details?id=com.transition.health&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">
+                  <img src={googlePlayImg} alt="Google Play" className="h-11 cursor-pointer hover:opacity-80 transition-opacity" />
+                </a>
+                <a href="https://apps.apple.com/in/app/the-transition/id6751278904" target="_blank" rel="noopener noreferrer">
+                  <img src={appStoreImg} alt="App Store" className="h-11 cursor-pointer hover:opacity-80 transition-opacity" />
+                </a>
               </div>
             </div>
           </div>
@@ -41,8 +45,8 @@ const Footer = () => {
                 <h4 className="text-lg font-bold mb-5">About</h4>
                 <ul className="space-y-3 text-[14px] opacity-80">
                   <li className="hover:text-gray-300 cursor-pointer">Features</li>
-                  {/* <li className="hover:text-gray-300 cursor-pointer">Pricing</li> */}
-                  <li className="hover:text-gray-300 cursor-pointer">Contact</li>
+                  <li className="hover:text-gray-300 cursor-pointer">AI Assistant</li>
+                  <li className="hover:text-gray-300 cursor-pointer">App Screens</li>
                 </ul>
               </div>
 
@@ -50,9 +54,8 @@ const Footer = () => {
               <div>
                 <h4 className="text-lg font-bold mb-5">Articles</h4>
                 <ul className="space-y-3 text-[14px] opacity-80">
-                  <li className="hover:text-gray-300 cursor-pointer">Blog</li>
-                  <li className="hover:text-gray-300 cursor-pointer">Get in Touch</li>
-                  <li className="hover:text-gray-300 cursor-pointer">Plans</li>
+                  <li className="hover:text-gray-300 cursor-pointer">Resources</li>
+                  <li className="hover:text-gray-300 cursor-pointer">Support</li>
                 </ul>
               </div>
 
@@ -60,9 +63,9 @@ const Footer = () => {
               <div>
                 <h4 className="text-lg font-bold mb-5">Pricing</h4>
                 <ul className="space-y-3 text-[14px] opacity-80">
-                  <li className="hover:text-gray-300 cursor-pointer">Resources</li>
-                  <li className="hover:text-gray-300 cursor-pointer">Pricing</li>
-                  <li className="hover:text-gray-300 cursor-pointer">Support</li>
+                  <li className="hover:text-gray-300 cursor-pointer">FAQs</li>
+                  
+               
                 </ul>
               </div>
             </div>
@@ -85,7 +88,7 @@ const Footer = () => {
           <div className="lg:col-span-3 space-y-10">
             {/* Contact */}
             <div>
-              <h4 className="text-lg font-bold mb-5">Content</h4>
+              <h4 className="text-lg font-bold mb-5">Contact</h4>
               <div className="space-y-4 text-[14px]">
                 <div className="flex items-center gap-3">
                   <Phone size={18} className="text-white/80" />

@@ -83,19 +83,19 @@ const WhyTransitionSection = () => {
             {/* STORE BUTTONS */}
             <div className="flex flex-row gap-3 sm:gap-4">
               
-              <a className="border border-gray-300 rounded-md px-3 sm:px-4 py-2 flex items-center justify-center hover:shadow-sm transition">
+              <a href="https://play.google.com/store/apps/details?id=com.transition.health&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" className=" rounded-md  py-2 flex items-center justify-center hover:shadow-sm transition">
                 <img
                   src={googlePlayImg}
                   alt="Google Play"
-                  className="h-8 sm:h-9 md:h-10"
+                  className="h-8 w-auto sm:h-9 md:h-10"
                 />
               </a>
 
-              <a className="border border-gray-300 rounded-md px-3 sm:px-4 py-2 flex items-center justify-center hover:shadow-sm transition">
+              <a href="https://apps.apple.com/in/app/the-transition/id6751278904" target="_blank" rel="noopener noreferrer" className=" rounded-md   py-2 flex items-center justify-center hover:shadow-sm transition">
                 <img
                   src={appStoreImg}
                   alt="App Store"
-                  className="h-8 sm:h-9 md:h-10"
+                  className="h-8 w-auto sm:h-9 md:h-10"
                 />
               </a>
 

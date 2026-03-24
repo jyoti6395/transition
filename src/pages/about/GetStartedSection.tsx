@@ -1,6 +1,16 @@
 import React from 'react';
 import { Play } from 'lucide-react';
 import getStartedVideoThumbnail from '@/assets/get-started-video-thumbnail.png';
+import googlePlayIcon from '@/assets/googleplay.png';
+import appstoreIcon from '@/assets/appstore.png';
+import {
+  Dialog,
+  DialogHeader ,
+  DialogTitle,
+  DialogDescription,
+  DialogContent,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 const GetStartedSection = () => {
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-12 space-y-16">
@@ -30,30 +40,47 @@ const GetStartedSection = () => {
           Getting started
         </h2>
         
-        <div className="relative inline-block">
-          <button className="bg-[#3B0A45] hover:bg-black text-white px-10 py-4 rounded-full text-sm font-bold transition-all uppercase tracking-wide shadow-md">
-            download the app Now
-          </button>
-
-          {/* Hand-drawn Arrow SVG */}
-          <div className="absolute -right-20 top-0 hidden md:block">
-             <svg 
-               width="60" 
-               height="60" 
-               viewBox="0 0 100 100" 
-               fill="none" 
-               className="text-[#3B0A45] transform -rotate-12"
+        <Dialog>
+          <DialogTrigger asChild>
+            <button className="bg-[#3B0A45] hover:bg-black text-white px-10 py-4 rounded-full text-sm font-bold transition-all uppercase tracking-wide shadow-md">
+              Get the App
+            </button>
+          </DialogTrigger>
+          <DialogContent className="sm:max-w-md">
+            <DialogHeader>
+              <DialogTitle className="text-center text-xl">Download The Transition App</DialogTitle>
+              <DialogDescription className="text-center">
+                Choose your preferred platform to download the app
+              </DialogDescription>
+            </DialogHeader>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center py-4">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.transition.health&pcampaignid=web_share"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform hover:scale-105 transition-transform duration-200"
               >
-                <path 
-                  d="M80,20 C85,45 60,80 30,75 M30,75 L45,65 M30,75 L40,85" 
-                  stroke="currentColor" 
-                  strokeWidth="3" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round"
+                <img
+                  src={googlePlayIcon}
+                  alt="Get it on Google Play"
+                  className="h-12 w-auto"
                 />
-             </svg>
-          </div>
-        </div>
+              </a>
+              <a
+                href="https://apps.apple.com/in/app/the-transition/id6751278904"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform hover:scale-105 transition-transform duration-200"
+              >
+                <img
+                  src={appstoreIcon}
+                  alt="Download on the App Store"
+                  className="h-12 w-auto"
+                />
+              </a>
+            </div>
+          </DialogContent>
+        </Dialog>
       </div>
       
     </div>

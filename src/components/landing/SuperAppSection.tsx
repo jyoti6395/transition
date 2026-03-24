@@ -89,16 +89,20 @@ const SuperAppSection = () => {
               </p>
 
               <div className="flex gap-3 justify-center md:justify-start">
-                <img
-                  src={googleImg}
-                  alt="Google Play"
-                  className="h-12"
-                />
-                <img
-                  src={appStoreImg}
-                  alt="App Store"
-                  className="h-12"
-                />
+                <a href="https://play.google.com/store/apps/details?id=com.transition.health&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={googleImg}
+                    alt="Google Play"
+                    className="h-12"
+                  />
+                </a>
+                <a href="https://apps.apple.com/in/app/the-transition/id6751278904" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={appStoreImg}
+                    alt="App Store"
+                    className="h-12"
+                  />
+                </a>
               </div>
             </div>
 

@@ -1,10 +1,12 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 // Replace with your actual blog post thumbnail images
 import blogImg1 from "@/assets/blog1.png";
 import blogImg2 from "@/assets/blog2.png";
 const BlogSection = () => {
+  const navigate = useNavigate();
   const categories = ["AI in Medicine", "Apple Health", "Blockchain Health ID", "Dece"];
 
   const blogPosts = [
@@ -29,7 +31,7 @@ const BlogSection = () => {
         {/* HEADER */}
         <div className="mb-16 max-w-3xl mx-auto">
           <h2 className="text-[32px] md:text-[42px] font-bold mb-6">
-            Read our blog for health and inspiration
+            Read our Articles for health and inspiration
           </h2>
           <p className="text-gray-300 text-[15px] md:text-[16px] leading-relaxed opacity-90">
             The best advice from doctors and scientists, health trends, and practical tips on sleep, nutrition, mental health, and fitness—all for your best life.
@@ -90,8 +92,11 @@ const BlogSection = () => {
           <p className="text-gray-300 text-[14px] font-medium uppercase tracking-widest">
             Start your journey to better health
           </p>
-          <button className="bg-white text-[#300132] px-10 py-4 rounded-full font-bold text-[15px] hover:bg-gray-100 transition-colors shadow-lg">
-            Explore the blog now!
+          <button 
+            onClick={() => navigate('/articles')}
+            className="bg-white text-[#300132] px-10 py-4 rounded-full font-bold text-[15px] hover:bg-gray-100 transition-colors shadow-lg cursor-pointer"
+          >
+            Explore the Articles now!
           </button>
         </div>
 

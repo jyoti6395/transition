@@ -9,6 +9,7 @@ import AboutPage from "./pages/about.tsx";
 import ContactPage from "./pages/ContactPage.tsx";
 import PricingPage from "./pages/PricingPage.tsx";
 import Articles from "./pages/articles.tsx";
+import ArticleDetail from "./pages/articles/ArticleDetail.tsx";
 
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/contact" element={<ContactPage/>} />
           <Route path="/pricing" element={<PricingPage/>} />
           <Route path="/articles" element={<Articles/>} /> {/* Placeholder for future Articles page */}
+          <Route path="/blog/:slug" element={<ArticleDetail/>} /> {/* Dynamic route for individual blog articles */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
